@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+body{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    background-color: rgb(223, 23, 23);
+    text-align: center;
+}
+
+h2#first{
+    background-color: rgb(228, 11, 11);
+    color: white;
+}
+h2#second{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+h2#third{
+    background-color: rgb(170, 170, 7);
+    color: white;
+    text-align: right;
+}
+h2#fourth{
+    background-color: green;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.paragrafo{
+    text-indent: 30px;
+    text-align: justify;
+    font-family: 'Tilt Prism', cursive;
+}
+
+div.hv{
+    text-align: center;
+}
+div.hv > p{
+    display: none;
+}
+
+div.hv:hover{
+    color: red;
+}
+
+div.hv:hover >p{
+    display: block;
+}

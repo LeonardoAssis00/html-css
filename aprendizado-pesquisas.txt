@@ -1,0 +1,26 @@
+Começando pelo cabeçalho da plataforma, temos a logotipo da Instalura e logo abaixo um banner. Esse banner tem duas versões dentro do nosso projeto: versão mobile e a versão desktop. Essas imagens são diferentes e nosso objetivo é mostrar a versão mobile quando o dispositivo tiver até 1024px de largura, e mostrar a versão desktop quando o dispositivo for maior que 1024px.
+
+Uma solução muito comum é criar as duas tags <img> e a partir de uma classe no CSS esconder ou mostrar com a propriedade display. O problema é que essa solução carrega as duas imagens ao mesmo tempo, independente do tipo de display. Se antes estávamos com medo de carregar uma imagem grande, agora temos que carregar uma imagem grande E uma pequena.
+
+Para solucionar esse problema, foram criadas no HTML novas tags e propriedades: a tag <picture>, a tag <source>, o atributo srcset="" e o atributo media="". A tag <picture> funciona como um wrapper ou um container. Dentro colocamos a (<img>) que vai ser a imagem base (considerando que estamos desenvolvendo mobile first a imagem base será a banner-mobile.jpg).
+
+<picture>
+    <img src="assets/img/banner-mobile.jpg" alt="Capa do Instalura">
+</picture> 
+Em seguida adicionamos a tag <source> passando duas informações: a localização da segunda imagem com o atributo srcset e a condição que fará essa imagem aparecer com o atributo media.
+
+<picture>
+    <source srcset="assets/img/banner-desktop.jpg" media="(min-width: 1024px)" >
+    <img src="assets/img/banner-mobile.jpg" alt="Capa do Instalura">
+</picture>
+Importante!
+
+A tag <img> deve ser a última na lista de imagens dentro da <picture>.
+
+As tags <source> devem seguir uma ordem de condições. Por exemplo:
+
+<source srcset="imagem-1.png" media="(min-width: 1400px)">
+
+<source srcset="imagem-2.png" media="(min-width: 768px)">
+
+A ordem da tag <source> influencia na prioridade das imagens.

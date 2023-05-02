@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Aqui fiz modificações globais na minha página*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Aqui ficaram as modificações do meu body*/
+body{
+ background-image: linear-gradient(to right, #6CC5C6, #DEF0EE ,#9ED6D7);   
+}
+/*Aqui ficaram as modificações da minha tag main*/
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #0259599c;
+    width: 600px;
+    padding: 10px;
+    margin: auto
+}
+/*Aqui ficaram as modificações do meu titulo h1*/
+h1{
+color: #025959;
+text-align: center;
+text-shadow: 1px 1px 2px #025959;
+}
+/*Aqui ficaram as modificações de todos meus titulos h2*/
+h2{
+color: #D1645D;
+}
+/*Aqui ficaram todas as modificações dos meus paragrafos*/
+p{
+    text-align: justify;
+}

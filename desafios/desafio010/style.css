@@ -1,0 +1,76 @@
+@font-face {
+    font-family: face;
+    src: url(fontes/idroid.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'face';
+    background-color: rgb(5, 170, 120);
+}
+header{
+    background-image: linear-gradient(to bottom,rgb(8, 175, 111), rgb(9, 126, 38));
+    margin: 0;
+    padding: 0;
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+header nav{
+    display: flex;
+    gap: 30px;
+}
+nav > a{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none; 
+}
+nav > a:hover{
+    background-color: rgb(24, 255, 24);
+    color: rgb(39, 38, 38);
+}
+main{
+    background-color: white;
+    margin: 0px 130px;
+    
+}
+article p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: bold;
+    text-indent: 30pt;
+    padding: 10px;
+}
+article > span{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+article h2{
+    text-align: center;
+}
+article h3{
+    
+    height: 12px;
+    width: auto;
+    padding: 9px;
+    background-image: linear-gradient(to right, rgb(33, 148, 91), white);
+
+}
+figure{
+    text-align: center;
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(3, 51, 3);
+    color: white;
+}
